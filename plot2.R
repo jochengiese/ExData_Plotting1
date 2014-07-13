@@ -11,7 +11,7 @@ theData <- data[indices,];
 
 theInstants <- strptime(paste(theData$Date, theData$Time), format= "%d/%m/%Y %H:%M:%S" )
 
-#power <- as.numeric(as.character(theData$Global_active_power))
+
 power <- as.numeric(levels(theData$Global_active_power)[theData$Global_active_power])
 
 
